@@ -66,6 +66,7 @@
 
             </nav>
         </div>  -->
+<audio id="myAudio" src="music/music.mp3" type="audio/mpeg"></audio>
 
     <div id="content">
     <!-- header -->
@@ -77,20 +78,18 @@
                         <a class="logo" href="index.html"><img src="images/logo.png" style="width: 120px; height: 110px;" alt="#" /></a>
                     </div>
                 </div>
-<!--                <div class="col-md-9">
+                <div class="col-md-9">
                     <div class="full">
                         <div class="right_header_info">
                             <ul>
                                <li>
-                                    <button type="button" id="sidebarCollapse">
-                                        <img src="images/menu_icon.png" alt="#">
-                                    </button>
+				<h5 id="playButton" style="color: white;">!KLIK UNTUK DENGAR MAS APRI NGERAP!</h5>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div> 
         </div>
     </header>
     <!-- end header -->
@@ -362,10 +361,6 @@
            <div class="copyright">
                 <div class="container">
                     <p>© Made with Love by Edward Harris</a></p>
-                    <audio controls autoplay>
-                        <source src="music/music.mp3" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                      </audio> 
                 </div>
             </div>
         </div>
@@ -437,6 +432,14 @@
            })
          })
       </script>
+      
+      <script>
+  document.getElementById('playButton').addEventListener('click', function() {
+    var audio = document.getElementById('myAudio');
+    audio.play();
+  });
+</script>
+
 
 </body>
 
